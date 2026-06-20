@@ -1,10 +1,22 @@
 import { Mail } from "lucide-react";
-import { FaLinkedin, FaTwitter, FaGithub  } from "react-icons/fa";
-    
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com/rishabhraikwar98", icon: FaGithub },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/rishabh-raikwar98", icon: FaLinkedin },
-  { label: "Twitter", href: "https://twitter.com/yourusername", icon: FaTwitter },
+  {
+    label: "GitHub",
+    href: "https://github.com/rishabhraikwar98",
+    icon: FaGithub,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/rishabh-raikwar98",
+    icon: FaLinkedin,
+  },
+  {
+    label: "Twitter",
+    href: "https://twitter.com/yourusername",
+    icon: FaTwitter,
+  },
   { label: "Email", href: "mailto:Rishabhraikwar77@gmail.com", icon: Mail },
 ];
 
@@ -23,8 +35,9 @@ export function Footer() {
 
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-10 md:flex-row md:items-start md:justify-between">
         <div className="text-center md:text-left">
-          <a href="#home" className="font-display text-lg font-bold gradient-text">
-            Rishabh Raikwar
+          <a href="#home" className="font-display text-lg font-bold">
+            <span className="text-foreground">Rishabh</span>
+            <span className="text-accent-violet">Raikwar</span>
           </a>
           <p className="mt-2 max-w-xs text-sm text-foreground/60">
             Crafting sleek web experiences.
@@ -34,7 +47,7 @@ export function Footer() {
         <ul className="flex gap-6">
           {quickLinks.map((link) => (
             <li key={link.href}>
-              <a    
+              <a
                 href={link.href}
                 className="text-sm font-medium text-foreground/70 transition-colors hover:text-accent-violet"
               >
