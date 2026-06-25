@@ -51,12 +51,12 @@ export function Projects() {
         </div>
 
         {/* Filter tabs */}
-        <div className="mt-10 flex justify-center gap-2">
+        <div className="mt-10 flex flex-wrap justify-center gap-2">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+              className={`relative min-w-22 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                 activeCategory === category
                   ? "text-white"
                   : "text-foreground/60 hover:text-foreground"
@@ -69,7 +69,7 @@ export function Projects() {
                   transition={{ type: "spring", stiffness: 350, damping: 30 }}
                 />
               )}
-              <span className="relative z-10">{category}</span>
+              <span className="relative z-10 block text-center">{category}</span>
             </button>
           ))}
         </div>
