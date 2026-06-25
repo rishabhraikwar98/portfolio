@@ -55,3 +55,6 @@ html {
   background: var(--accent-cyan);
   border-radius: 9999px;
 }
+section {
+  scroll-margin-top: 5rem;
+}

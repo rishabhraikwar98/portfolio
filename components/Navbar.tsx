@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -90,7 +91,16 @@ export function Navbar() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setMenuOpen(false);
+                      const targetId = link.href.replace("#", "");
+                      setTimeout(() => {
+                        document
+                          .getElementById(targetId)
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }, 300);
+                    }}
                     className="block rounded-lg px-3 py-3 text-base font-medium text-foreground/80 transition-colors hover:bg-foreground/10 hover:text-accent-violet"
                   >
                     {link.label}
