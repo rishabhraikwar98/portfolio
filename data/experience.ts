@@ -1,3 +1,10 @@
+type ExperienceEntry = {
+  role: string;
+  company: string;
+  duration: string;
+  points: string[];
+};
+
 export const experience: ExperienceEntry[] = [
   {
     role: "Full Stack Developer",
