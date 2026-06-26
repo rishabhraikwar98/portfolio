@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
   {
@@ -12,20 +12,9 @@ const socialLinks = [
     href: "https://www.linkedin.com/in/rishabh-raikwar98",
     icon: FaLinkedin,
   },
-  {
-    label: "Twitter",
-    href: "https://twitter.com/yourusername",
-    icon: FaTwitter,
-  },
   { label: "Email", href: "mailto:Rishabhraikwar77@gmail.com", icon: Mail },
 ];
 
-const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
 
 export function Footer() {
   return (
@@ -43,19 +32,6 @@ export function Footer() {
             Crafting sleek web experiences.
           </p>
         </div>
-
-        <ul className="flex gap-6">
-          {quickLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-sm font-medium text-foreground/70 transition-colors hover:text-accent-violet"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
 
         <div className="flex gap-4">
           {socialLinks.map((social) => (
