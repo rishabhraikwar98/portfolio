@@ -24,13 +24,13 @@ export default async function ProjectDetailPage({
   return (
     <main className="px-6 pt-32 pb-24">
       <div className="mx-auto max-w-4xl">
-        <Link
+        <a
           href="/#projects"
           className="inline-flex items-center gap-2 text-sm font-medium text-foreground/60 transition-colors hover:text-accent-violet"
         >
           <ArrowLeft size={16} />
           Back to projects
-        </Link>
+        </a>
 
         <h1 className="mt-6 font-display text-4xl font-bold text-foreground md:text-5xl">
           {project.title}
