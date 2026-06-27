@@ -1,6 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "next-themes";
+import {PageTransition} from "@/components/PageTransition";
 
 if (
   typeof window !== "undefined" &&
@@ -21,7 +22,9 @@ if (
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      {children}
+      <PageTransition>
+        {children}
+      </PageTransition>
     </ThemeProvider>
   );
 }

@@ -58,3 +58,8 @@ html {
 section {
   scroll-margin-top: 5rem;
 }
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
