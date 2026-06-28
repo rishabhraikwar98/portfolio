@@ -42,7 +42,7 @@ export function Projects() {
     <section id="projects" className="px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-accent-violet">
+          <span className="text-sm font-semibold uppercase tracking-wider text-accent-violet-text">
             Projects
           </span>
           <h2 className="mt-3 font-display text-3xl font-bold text-foreground md:text-4xl">

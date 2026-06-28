@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #14121f;
   --accent-violet: #7c3aed;
+  --accent-violet-text: #a78bfa;
   --accent-cyan: #06b6d4;
 }
 
@@ -16,6 +17,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent-violet: var(--accent-violet);
+  --color-accent-violet-text: var(--accent-violet-text);
   --color-accent-cyan: var(--accent-cyan);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -63,3 +65,4 @@ section {
     cursor: none !important;
   }
 }
+

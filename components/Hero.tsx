@@ -53,7 +53,7 @@ export function Hero() {
       >
         <motion.span
           variants={item}
-          className="mb-4 rounded-full border border-accent-violet/30 bg-accent-violet/10 px-4 py-1.5 text-sm font-medium text-accent-violet"
+          className="mb-4 rounded-full border border-accent-violet/30 bg-accent-violet/10 px-4 py-1.5 text-sm font-medium text-accent-violet-text"
         >
           Available for new opportunities
         </motion.span>

@@ -1,12 +1,14 @@
-import { About } from "@/components/About";
-import { BackToTop } from "@/components/BackToTop";
-import { Contact } from "@/components/Contact";
-import { Experience } from "@/components/Experience";
-import { Footer } from "@/components/Footer";
-import { Hero } from "@/components/Hero";
+import dynamic from "next/dynamic";
 import { Navbar } from "@/components/Navbar";
-import { Projects } from "@/components/Projects";
-import { Skills } from "@/components/Skills";
+import { Hero } from "@/components/Hero";
+import { Footer } from "@/components/Footer";
+import { BackToTop } from "@/components/BackToTop";
+
+const About = dynamic(() => import("@/components/About").then((mod) => mod.About));
+const Skills = dynamic(() => import("@/components/Skills").then((mod) => mod.Skills));
+const Projects = dynamic(() => import("@/components/Projects").then((mod) => mod.Projects));
+const Experience = dynamic(() => import("@/components/Experience").then((mod) => mod.Experience));
+const Contact = dynamic(() => import("@/components/Contact").then((mod) => mod.Contact));
 
 export default function Home() {
   return (
@@ -19,9 +21,9 @@ export default function Home() {
         <Projects />
         <Experience />
         <Contact />
-        <BackToTop/>
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

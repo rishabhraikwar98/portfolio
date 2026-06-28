@@ -26,7 +26,7 @@ export function Footer() {
         <div className="text-center md:text-left">
           <a href="#home" className="font-display text-lg font-bold">
             <span className="text-foreground">Rishabh</span>
-            <span className="text-accent-violet">Raikwar</span>
+            <span className="text-accent-violet-text">Raikwar</span>
           </a>
           <p className="mt-2 max-w-xs text-sm text-foreground/60">
             Crafting sleek web experiences.

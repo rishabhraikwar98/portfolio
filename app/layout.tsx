@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import { Providers } from "./providers";
-import { MagneticCursor } from "@/components/MagnaticCursor";
+import { MagneticCursorLoader } from "@/components/MagneticCursorLoader";
 import "./globals.css";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,7 +37,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Providers>{children}</Providers>
-        <MagneticCursor />
+        <MagneticCursorLoader />
       </body>
     </html>
   );

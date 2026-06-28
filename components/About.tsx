@@ -49,6 +49,7 @@ export function About() {
             src={personalPhoto}
             alt="Portrait photo"
             fill
+            sizes="(max-width: 768px) 100vw, 384px"
             className="object-cover"
           />
         </motion.div>
