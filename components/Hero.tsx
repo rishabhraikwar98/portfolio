@@ -69,8 +69,9 @@ export function Hero() {
           variants={item}
           className="mt-6 max-w-xl text-lg text-foreground/70"
         >
-          I build fast, accessible, and beautifully designed web experiences
-          using modern tools like Next.js and Framer Motion.
+          Full Stack Developer building production-ready web apps, SaaS
+          platforms, and real-time systems — from first commit to live
+          deployment.
         </motion.p>
 
         <motion.div

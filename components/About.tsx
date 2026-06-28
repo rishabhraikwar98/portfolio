@@ -67,15 +67,22 @@ export function About() {
             Crafting digital experiences with code and curiosity
           </h2>
           <p className="mt-5 text-foreground/70">
-            I'm a developer who loves{" "}
+            I'm a full-stack developer who likes{" "}
             <span className="font-semibold text-foreground">
-              turning complex problems into clean, intuitive interfaces
+              building real products end-to-end
             </span>
-            . With a background in full-stack development, I focus on building{" "}
+            , not just shipping isolated features. From dashboards to SaaS
+            platforms, I've worked across the whole stack — planning, building,
+            and deploying — so the things I ship are ready for actual users on
+            day one.
+          </p>
+          <p className="mt-4 text-foreground/70">
+            As a freelance developer, I've learned to{" "}
             <span className="font-semibold text-foreground">
-              products that feel as good to use as they look
+              own a problem fully
             </span>
-            .
+            , from a rough idea to a working, deployed product. That's the kind
+            of ownership I bring to every team I work with.
           </p>
           <p className="mt-4 text-foreground/70">
             When I'm not coding, you'll find me exploring new design trends,
